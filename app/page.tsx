@@ -24,7 +24,7 @@ export default function Home() {
               Home
             </button>
           </Link>
-          <Link href="/beyblade-x">
+          <Link href="/bbxth">
             <button className="w-full py-2 px-4 rounded-full bg-white text-black font-semibold text-left hover:bg-gray-200 transition shadow">
               Beyblade X
             </button>
@@ -51,8 +51,8 @@ export default function Home() {
 
         {/* Content Area */}
         <main className="flex-1 p-8 bg-black flex flex-wrap gap-8 items-start justify-start">
-          {/* Beyblade X Card (คลิกเพื่อไปหน้า Beyblade X) */}
-          <Link href="/beyblade-x" className="flex flex-col items-center group cursor-pointer">
+          {/* Beyblade X Card (คลิกเพื่อไปหน้า /bbxth) */}
+          <Link href="/bbxth" className="flex flex-col items-center group cursor-pointer">
             <div className="p-2 rounded-xl hover:bg-gray-900 transition border border-transparent hover:border-gray-800 w-80 md:w-[450px]">
               <img 
                 src="/beyblade-x-logo.png" 
