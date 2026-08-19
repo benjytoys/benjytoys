@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 export default function BeybladeXPage() {
-  // ปุ่มฝั่งซ้าย
+  // เมนูฝั่งซ้ายของจอ
   const leftMenuItems = [
     { name: 'Home', href: '/' },
     { name: 'Product List', href: '#' },
@@ -12,7 +12,7 @@ export default function BeybladeXPage() {
     { name: 'Score Board', href: '#' },
   ];
 
-  // ปุ่มฝั่งขวา
+  // เมนูฝั่งขวาของจอ
   const rightMenuItems = [
     { name: 'Community', href: '#' },
     { name: 'Bey News', href: '#' },
@@ -21,7 +21,7 @@ export default function BeybladeXPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans flex flex-col">
+    <div className="min-h-screen bg-black text-white font-sans flex flex-col justify-between">
       {/* Header / Logo Beyblade X */}
       <header className="flex justify-center items-center py-6 bg-black border-b border-gray-900">
         <img 
@@ -31,45 +31,48 @@ export default function BeybladeXPage() {
         />
       </header>
 
-      {/* Layout Content */}
-      <div className="flex flex-col md:flex-row flex-1">
-        {/* Sidebar: แบ่ง 2 คอลัมน์ (ซ้าย-ขวา) */}
-        <aside className="w-full md:w-80 bg-black p-4 border-r border-gray-900 flex flex-col gap-4">
-          <div className="grid grid-cols-2 gap-2">
-            {/* Column 1: ฝั่งซ้าย */}
-            <div className="flex flex-col gap-2">
-              {leftMenuItems.map((item, index) => (
-                <Link key={index} href={item.href}>
-                  <button className="w-full py-2 px-3 rounded-full bg-white text-black font-semibold text-xs md:text-sm text-center hover:bg-gray-200 transition shadow">
-                    {item.name}
-                  </button>
-                </Link>
-              ))}
-            </div>
-
-            {/* Column 2: ฝั่งขวา */}
-            <div className="flex flex-col gap-2">
-              {rightMenuItems.map((item, index) => (
-                <Link key={index} href={item.href}>
-                  <button className="w-full py-2 px-3 rounded-full bg-white text-black font-semibold text-xs md:text-sm text-center hover:bg-gray-200 transition shadow">
-                    {item.name}
-                  </button>
-                </Link>
-              ))}
-            </div>
-          </div>
+      {/* Main Container: แยกฝั่งซ้าย - กลาง - ขวา */}
+      <div className="flex flex-col md:flex-row flex-1 justify-between items-start p-4 md:p-6 gap-6">
+        
+        {/* Sidebar ฝั่งซ้ายสุด */}
+        <aside className="w-full md:w-48 flex flex-col gap-2">
+          {leftMenuItems.map((item, index) => (
+            <Link key={index} href={item.href}>
+              <button className="w-full py-2.5 px-4 rounded-full bg-white text-black font-semibold text-xs md:text-sm text-center hover:bg-gray-200 transition shadow">
+                {item.name}
+              </button>
+            </Link>
+          ))}
         </aside>
 
-        {/* Main Content Area */}
-        <main className="flex-1 p-8 bg-black flex flex-col items-center justify-center gap-6">
-          <button className="text-xl md:text-3xl font-bold text-yellow-400 hover:text-yellow-300 transition flex items-center gap-2">
+        {/* Content ตรงกลางจอ (มีเอฟเฟกต์ไฟ Glow เหมือนเดิม) */}
+        <main className="flex-1 flex flex-col items-center justify-center gap-8 my-auto text-center py-12">
+          <a 
+            href="#" 
+            className="text-xl md:text-3xl font-bold text-yellow-500 hover:text-yellow-400 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(234,179,8,0.8)]"
+          >
             <span>🥊</span> (คลิก) เพื่อดูงานแข่งที่กำลังจะมาถึง <span>🏆</span>
-          </button>
+          </a>
 
-          <button className="text-lg md:text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition flex items-center gap-2">
+          <a 
+            href="#" 
+            className="text-lg md:text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(34,211,238,0.8)]"
+          >
             <span>📂</span> ลงข้อมูลงานแข่ง (คลิก) <span>🧩</span>
-          </button>
+          </a>
         </main>
+
+        {/* Sidebar ฝั่งขวาสุด */}
+        <aside className="w-full md:w-48 flex flex-col gap-2">
+          {rightMenuItems.map((item, index) => (
+            <Link key={index} href={item.href}>
+              <button className="w-full py-2.5 px-4 rounded-full bg-white text-black font-semibold text-xs md:text-sm text-center hover:bg-gray-200 transition shadow">
+                {item.name}
+              </button>
+            </Link>
+          ))}
+        </aside>
+
       </div>
     </div>
   );
