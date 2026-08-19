@@ -75,7 +75,7 @@ export default function BeybladeXPage() {
           <main className="flex-1 flex flex-col items-center justify-start gap-8 text-center pt-6 md:pt-10">
             {/* บรรทัดที่ 1 */}
             <a 
-              href="https://docs.google.com/spreadsheets/d/1X3vS23Kz23mZ4Y-4sZ6K420e6e_A41_g/edit?usp=sharing" 
+              href="https://script.google.com/macros/s/AKfycbzBSD1vLD5z3OuQPZGzaEJE2F7SRgdUkOwCEOL_0RTR3cCagL1f4uzBMOg_037h7Bx8vA/exec" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-xl md:text-3xl font-bold text-yellow-500 hover:text-yellow-400 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(234,179,8,0.8)]"
@@ -85,7 +85,7 @@ export default function BeybladeXPage() {
 
             {/* บรรทัดที่ 2 */}
             <a 
-              href="https://forms.gle/4J39K4K7A8293021" 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe1wgphHbHUk7UayksmahQ1orNlquZzFCC9LHgO1vaOW9W7xQ/viewform" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-lg md:text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(34,211,238,0.8)]"
