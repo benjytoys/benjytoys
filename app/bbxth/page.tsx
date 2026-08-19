@@ -95,7 +95,7 @@ export default function BeybladeXPage() {
 
             {/* บรรทัดที่ 3 */}
             <a 
-              href="#" 
+              href="https://script.google.com/macros/s/AKfycbyZzrMaFY_QoG3QlvXdMwvExcMm6D7LW6kxEVNnKnmCEcS9iZ92ZQXHfoc2lZEyw7Yp/exec" 
               className="text-lg md:text-2xl font-bold text-fuchsia-400 hover:text-fuchsia-300 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(232,121,249,0.8)]"
             >
               <span>🥤</span> Rankings Smoothie Tournament <span>👑</span>
