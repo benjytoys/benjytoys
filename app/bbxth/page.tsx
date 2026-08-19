@@ -22,7 +22,7 @@ export default function BeybladeXPage() {
 
   return (
     <div className="min-h-screen bg-black text-white font-sans flex flex-col">
-      {/* Header / Logo Beyblade X (ขยายขนาดโลโก้ให้ใหญ่ขึ้น) */}
+      {/* Header / Logo Beyblade X */}
       <header className="flex justify-center items-center pt-8 pb-4 bg-black">
         <img 
           src="/beyblade-x-logo.png" 
@@ -45,8 +45,9 @@ export default function BeybladeXPage() {
           ))}
         </aside>
 
-        {/* Content ตรงกลางจอ (ขยับตำแหน่งขึ้นด้านบน + ผูกลิงก์เดิม) */}
+        {/* Content ตรงกลางจอ */}
         <main className="flex-1 flex flex-col items-center justify-start gap-8 text-center pt-6 md:pt-10">
+          {/* บรรทัดที่ 1 */}
           <a 
             href="https://docs.google.com/spreadsheets/d/1X3vS23Kz23mZ4Y-4sZ6K420e6e_A41_g/edit?usp=sharing" 
             target="_blank" 
@@ -56,6 +57,7 @@ export default function BeybladeXPage() {
             <span>🥊</span> (คลิก) เพื่อดูงานแข่งที่กำลังจะมาถึง <span>🏆</span>
           </a>
 
+          {/* บรรทัดที่ 2 */}
           <a 
             href="https://forms.gle/4J39K4K7A8293021" 
             target="_blank" 
@@ -63,6 +65,14 @@ export default function BeybladeXPage() {
             className="text-lg md:text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(34,211,238,0.8)]"
           >
             <span>📂</span> ลงข้อมูลงานแข่ง (คลิก) <span>🧩</span>
+          </a>
+
+          {/* บรรทัดที่ 3 (เพิ่มใหม่) */}
+          <a 
+            href="#" 
+            className="text-lg md:text-2xl font-bold text-fuchsia-400 hover:text-fuchsia-300 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(232,121,249,0.8)]"
+          >
+            <span>🥤</span> Rankings Smoothie Tournament <span>👑</span>
           </a>
         </main>
 
