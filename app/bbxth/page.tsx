@@ -5,19 +5,19 @@ export default function BeybladeXPage() {
   // เมนูฝั่งซ้ายของจอ
   const leftMenuItems = [
     { name: 'Home', href: '/' },
-    { name: 'Product List', href: '#' },
+    { name: 'Product List', href: 'https://beybladexth.wixsite.com/beyblade-x-thailand/product-list' },
     { name: 'Parts List', href: '#' },
-    { name: 'Combo Hot', href: '#' },
-    { name: 'Bey X Timer', href: '#' },
+    { name: 'Combo Hot', href: 'https://beybladexth.wixsite.com/beyblade-x-thailand/%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99' },
+    { name: 'Bey X Timer', href: 'https://shoot.9gunner.com/' },
     { name: 'Score Board', href: '#' },
   ];
 
   // เมนูฝั่งขวาของจอ
   const rightMenuItems = [
-    { name: 'Community', href: '#' },
+    { name: 'Community', href: 'https://www.facebook.com/groups/678956365123549' },
     { name: 'Bey News', href: '#' },
-    { name: 'กติกาการแข่งขัน', href: '#' },
-    { name: 'แลกโค้ด', href: '#' },
+    { name: 'กติกาการแข่งขัน', href: 'https://beybladexth.wixsite.com/beyblade-x-thailand/%E0%B8%81%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%82%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%B1%E0%B8%99' },
+    { name: 'แลกโค้ด', href: 'https://beybladexth.wixsite.com/beyblade-x-thailand/%E0%B8%AA%E0%B8%B3%E0%B9%80%E0%B8%99%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87-home' },
   ];
 
   // ลิงก์โลโก้ขอบล่างจอ (Footer)
