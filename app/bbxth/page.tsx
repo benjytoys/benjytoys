@@ -21,13 +21,13 @@ export default function BeybladeXPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans flex flex-col justify-between">
-      {/* Header / Logo Beyblade X */}
-      <header className="flex justify-center items-center py-6 bg-black border-b border-gray-900">
+    <div className="min-h-screen bg-black text-white font-sans flex flex-col">
+      {/* Header / Logo Beyblade X (ขยายขนาดโลโก้ให้ใหญ่ขึ้น) */}
+      <header className="flex justify-center items-center pt-8 pb-4 bg-black">
         <img 
           src="/beyblade-x-logo.png" 
           alt="Beyblade X Logo" 
-          className="h-20 md:h-28 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+          className="h-28 md:h-40 w-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.25)]"
         />
       </header>
 
@@ -45,17 +45,21 @@ export default function BeybladeXPage() {
           ))}
         </aside>
 
-        {/* Content ตรงกลางจอ (มีเอฟเฟกต์ไฟ Glow เหมือนเดิม) */}
-        <main className="flex-1 flex flex-col items-center justify-center gap-8 my-auto text-center py-12">
+        {/* Content ตรงกลางจอ (ขยับตำแหน่งขึ้นด้านบน + ผูกลิงก์เดิม) */}
+        <main className="flex-1 flex flex-col items-center justify-start gap-8 text-center pt-6 md:pt-10">
           <a 
-            href="#" 
+            href="https://docs.google.com/spreadsheets/d/1X3vS23Kz23mZ4Y-4sZ6K420e6e_A41_g/edit?usp=sharing" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="text-xl md:text-3xl font-bold text-yellow-500 hover:text-yellow-400 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(234,179,8,0.8)]"
           >
             <span>🥊</span> (คลิก) เพื่อดูงานแข่งที่กำลังจะมาถึง <span>🏆</span>
           </a>
 
           <a 
-            href="#" 
+            href="https://forms.gle/4J39K4K7A8293021" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="text-lg md:text-2xl font-bold text-cyan-400 hover:text-cyan-300 transition flex items-center justify-center gap-3 drop-shadow-[0_0_20px_rgba(34,211,238,0.8)]"
           >
             <span>📂</span> ลงข้อมูลงานแข่ง (คลิก) <span>🧩</span>
